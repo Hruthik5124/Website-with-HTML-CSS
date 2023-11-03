@@ -69,11 +69,6 @@ nav {
     color: #000;
 }
 
-.menu ul .menu-list-img{
-    display: none;
-    cursor: pointer;
-}
-
 .txt{
     position: absolute;
     top: 52%;
@@ -132,8 +127,27 @@ nav {
 }
 
 @media screen and (max-width:600px) {
-     .menu ul li{
-        display: none;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(38, 38, 38);
+        padding: 1px;
+    }
+
+    .menu ul li{
+        margin-left: 2px;
+        list-style: none;
+    }
+    
+    .menu ul li a{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5PX;
+        padding: 2px 3px;
+        font-weight: 400;
+        transition: all 0.3s ease;
     }
     .menu ul .menu-list-img{
         display: inline-flex;
@@ -190,6 +204,8 @@ nav {
 }
 
 @media screen and (max-width:480px) {
+
+
     .txt .main-txt{
         color: #fff;
         font-weight: 600;
